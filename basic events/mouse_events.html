@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+
+        function myFunction(){
+            document.write("Yahoo baba is here for you !!!!<br>");
+            alert("mouse event has been executed!!");
+        }
+    </script>
+</head>
+<body>
+       <button onclick="myFunction()">click here</button>
+
+       <p ondblclick="myFunction()">click me double times</p>
+
+       <button oncontextmenu="myFunction()">left click to activate</button>
+
+       <p onmouseenter="myFunction()">just hover the mouse</p>
+
+       <button onmouseout="myFunction()">first hover then remove mouse</button>
+ 
+       <p onmousedown="myFunction()">just click on it</p>
+
+       <button onmouseup="myFunction()">first click & hold then leave it</button>
+
+       
+</body>
+</html>

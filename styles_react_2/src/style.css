@@ -1,0 +1,10 @@
+.Demo_test{
+    color: red;
+    background-color: orange;
+    width: 200px;
+    height : 70px;
+    border: 12px solid green;
+    border-radius: 15px;
+    margin-left: 190px;
+    padding-top: 25px;
+}

@@ -1,0 +1,10 @@
+.design_module{
+      color : green;
+      background-color: orange;
+      border : 10px solid blue;
+      border-radius: 15px;
+      width : 200px;
+      height : 80px;
+      margin-left : 400px;
+      padding-top: 25px;
+}

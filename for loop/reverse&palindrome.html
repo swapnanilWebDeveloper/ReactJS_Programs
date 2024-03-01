@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function my_sum_dig(num){
+            var N, dig, sum =0;
+            for( N = num; N > 0; N = parseInt(N /10)){
+                dig = parseInt(N % 10);
+                sum = (sum + dig) * 10;
+            }
+            sum = sum / 10;
+            document.write("The reverse of  "+num+" is = "+sum+"<br>");
+            if(sum == num){
+                document.write(num+" is a palindrome<br>");
+            }
+            else{
+                document.write(num+" is not a palindrome<br>");
+            }
+        }
+        my_sum_dig(123423);
+        my_sum_dig(663542);
+        my_sum_dig(32123);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

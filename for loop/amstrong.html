@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function my_sum_dig(num){
+            var N, dig, sum =0;
+            for( N = num; N > 0; N = parseInt(N/10)){
+                dig = parseInt(N % 10);
+                sum = (sum + dig*dig*dig);
+            }
+            if(sum == num){
+                document.write(num+" is an amstrong number<br>");
+            }
+            else{
+                document.write(num+" is not an amstrong number<br>");
+            }
+        }
+        my_sum_dig(153);
+        my_sum_dig(673);
+        my_sum_dig(370);
+        my_sum_dig(375);
+        my_sum_dig(371);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

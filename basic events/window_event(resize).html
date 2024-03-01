@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function my_window_fun(){
+            document.write("the resize event has been invoked because you have tried to resize the window <br>");
+            alert("don't resize the window");
+        }
+    </script>
+</head>
+<body onresize="my_window_fun()">
+    <p>don't try to resize the window</p>
+</body>
+</html>

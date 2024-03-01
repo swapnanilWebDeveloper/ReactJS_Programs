@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function myFunction(num){
+            var N, dig, sum= 0;
+            N = num;
+            while(N > 0){
+                dig = parseInt(N % 10);
+                sum = sum + dig*dig*dig;
+                N = parseInt(N /10);
+            }
+            if(sum == num){
+                document.write(num+"   is an amstrong number<br>");
+            }
+            else{
+                document.write(num+"   is not an amstrong number<br>");
+            }
+        }
+
+        myFunction(153);
+        myFunction(151);
+        myFunction(150);
+        myFunction(370);
+        myFunction(245);
+        myFunction(371);
+        myFunction(188);
+    </script>
+</head>
+<body>
+      
+</body>
+</html>

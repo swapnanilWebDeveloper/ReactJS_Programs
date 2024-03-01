@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+
+        function my_sum(a,b){
+            var sum;
+            sum = a + b;
+            document.write("The sumation is = "+sum+"<br>");
+            alert("the sumation is = "+sum);
+        }
+        function my_substract(x,y){
+            var sub;
+            sub = x - y;
+            document.write("The substraction is = "+sub+"<br>");
+            alert("the substraction is = "+sub);
+        }
+        function my_multiplication(p,q){
+            var mult;
+            mult = p * q;
+            document.write("The multiplication is = "+mult+"<br>");
+            alert("The multiplication is = "+mult);
+        }
+        function my_division(m,n){
+            var div;
+            div = m / n;
+            document.write("The division is = "+div+"<br>");
+            alert("The division is = "+div);
+        }
+        function rectangle_area(len,btd){
+            var area;
+            area = len * btd;
+            document.write("The area is = "+area+"<br>");
+            alert("The area is = "+area);
+        }
+        function square_area(side){
+            var surface;
+            surface = side *side ;
+            document.write("the area of the square is = "+surface+"<br>");
+            alert("the area of the square is = "+surface);
+        }
+        function circle_area(radius){
+            var surface;
+            surface = 3.14 * radius*radius; 
+            document.write("the surface is = "+surface+"<br>");
+            alert("the surface is = "+surface);
+        }
+    </script>
+</head>
+<body>
+       <button onclick="my_sum(10,4)">click here</button>
+
+       <p ondblclick="my_substract(16, 5)">click me double times</p>
+
+       <button oncontextmenu="my_multiplication(3,12)">left click to activate</button>
+
+       <p onmouseenter="my_division(18,6)">just hover the mouse</p>
+
+       <button onmouseout="rectangle_area(11,4)">first hover then remove mouse</button>
+ 
+       <p onmousedown="square_area(6)">just click on it</p>
+
+       <button onmouseup=" circle_area(3)">first click & hold then leave it</button>
+
+       
+</body>
+</html>
